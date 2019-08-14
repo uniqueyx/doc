@@ -1,0 +1,21 @@
+https://blog.csdn.net/xiaoping_1988/article/details/78768845
+
+npm install –global vue-cli 
+vue init webpack my-project
+cd my-project
+npm install 
+npm run dev
+
+css  npm install bootstrap # 响应式编程框架  npm install fontawesome # 图标字体库
+
+npm i element-ui -S 
+npm install babel-helper-vue-jsx-merge-props 
+npm install babel-plugin-syntax-jsx 
+npm install babel-plugin-transform-vue-jsx 
+在.babelrc文件中的plugins加上"transform-vue-jsx"
+
+npm install mockjs
+
+npm install axios
+
+npm install axios-mock-adapter
