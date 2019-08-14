@@ -1,0 +1,38 @@
+https://blog.csdn.net/shirdrn/article/details/7105539    mongodb基本命令
+
+https://www.mongodb.com/download-center#community
+解压 创建db目录如D:\mongodb\db
+cmd D:\mongodb\bin\mongod --dbpath D:\mongodb\db
+创建log目录如D:\mongodb\log
+创建文件mongod.cfg
+systemLog:
+    destination: file
+    path: D:\mongodb\log\mongod.log
+storage:
+    dbPath: D:\mongodb\db
+cmd D:\mongodb\bin\mongod.exe --config "D:\mongodb\log\mongod.cfg" --install
+启动
+net start MongoDB
+关闭
+net stop MongoDB
+
+安装包方式安装
+安装.msc
+ignore
+打开data文件夹新建db文件夹
+.\mongod -dbpath D:\mongodb\data\db
+cmd进入目录mongo
+
+
+启动终止
+mongod --dbpath /usr/mongo/data --logfile /var/mongo.log
+mongod --repair
+db.shutdownServer()
+
+mongo.exe 常用查询命令
+show dbs
+use web
+db.contract.count()
+db.contract.find({id:1})
+
+
