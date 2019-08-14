@@ -1,16 +1,24 @@
-ssh-keygen -t rsa -C 303945003@qq.com Ãû×ÖĞŞ¸Ä±ÈÈçid_rsa_yx
-pubÖĞ¸´ÖÆµ½githubÓÒÉÏ½ÇsettingÖĞssh
-configÎÄ¼ş
-# ÅäÖÃgithub.com
+ssh-keygen -t rsa -C 303945003@qq.com åå­—ä¿®æ”¹æ¯”å¦‚id_rsa_yx
+pubä¸­å¤åˆ¶åˆ°githubå³ä¸Šè§’settingä¸­ssh
+configæ–‡ä»¶
+# é…ç½®github.com
 Host github.com                 
     HostName github.com
     IdentityFile C:\\Users\\user\\.ssh\\id_rsa_yx
     PreferredAuthentications publickey
     User yx
 
-# ÅäÖÃgit.oschina.net 
+# é…ç½®git.oschina.net 
 Host gitee.taojiji.com 
     HostName gitee.taojiji.com
     IdentityFile C:\\Users\\user\\.ssh\\id_rsa
     PreferredAuthentications publickey
     User xi.yan
+    
+å¦‚ä½•ç”¨å‘½ä»¤å°†æœ¬åœ°é¡¹ç›®ä¸Šä¼ åˆ°git
+git init
+git add .
+git commit -m 'first commit'
+git remote add origin git@...
+git pull --rebase origin master
+git push -u origin master
