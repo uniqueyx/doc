@@ -35,4 +35,5 @@ use web
 db.contract.count()
 db.contract.find({id:1})
 
-
+linux∞¢¿Ô‘∆
+./mongo 127.0.0.1:28028
