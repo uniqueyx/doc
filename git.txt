@@ -22,3 +22,15 @@ git commit -m 'first commit'
 git remote add origin git@...
 git pull --rebase origin master
 git push -u origin master
+
+
+解决github提交问题
+ssh: connect to host github.com port 22: Connection timed out fatal: Could not read from remote repo
+检查能否连接  ssh -T git@github.com
+找到Users\uniqueyx\.ssh      .ssh文件夹   添加config文件 去掉txt后缀
+Host github.com
+User 303945003@qq.com
+Hostname ssh.github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa
+Port 443
